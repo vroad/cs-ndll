@@ -416,7 +416,7 @@ namespace cs
         {
             object arg1 = HandleUtils.GetObjectFromIntPtr(inArg1);
             object arg3 = HandleUtils.GetObjectFromIntPtr(inArg3);
-            if (arg1 == null || arg3 == null)
+            if (arg1 == null)
                 throw new ArgumentNullException("Null object set");
 
             String field = CSHandleContainer.GetCurrent().GetStringFromId(arg2);
